@@ -1,0 +1,7 @@
+name: GPTMC
+version: 0.1
+main: dev.fabboy.GPTMCEntry
+author: fabboy
+api-version: 1.21
+description: A Minecraft plugin for letting AI be your god ;)
+
