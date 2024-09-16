@@ -4,7 +4,7 @@ docker rm -f gptmc_devcontainer
 # Create and start a new container
 docker run -it \
   --name gptmc_devcontainer \
-  -v /home/fabrice/JavaProjects/gptmc:/workspace \
+  -v $(pwd):/workspace \
   -w /workspace \
   gptmc
 

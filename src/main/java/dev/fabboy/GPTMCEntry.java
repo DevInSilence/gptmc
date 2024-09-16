@@ -8,16 +8,15 @@ import org.bukkit.Server;
 import org.bukkit.plugin.PluginManager;
 
 public class GPTMCEntry extends JavaPlugin {
-  private Logger logger;
-  private Server server;
-  private PluginManager PManager;
+  private static Logger logger;
+  private static Server server;
+  private static PluginManager PManager;
 
   @Override
   public void onEnable() {
     logger = getLogger();
-    server = getServer(); 
+    server = getServer();
     PManager = server.getPluginManager();
-    
     logger.info("GPTMC is now running!");
     this.registerEventHandlers();
   }
